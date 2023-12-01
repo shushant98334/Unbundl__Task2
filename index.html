@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Bundle for Chocolate brand</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Build Your Own Chocolate Pack</div>
+        <p> <b>Use arrows in the input to change the quantities</b> </p>
+        <div class="products">
+          <div class="product" data-name="Dark Chocolate" data-price="50">
+            <img
+              src="https://images.unsplash.com/photo-1604514813560-1e4f5726db65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Dark Chocolate"
+            />
+            <h3>Dark Chocolate</h3>
+            <p>₹50</p>
+            <input
+              type="number"
+              min="0"
+              max="8"
+              value="0"
+              onkeydown="return false"
+              onchange="updateSummary()"
+            />
+          </div>
+          <div class="product" data-name="Milk Chocolate" data-price="40">
+            <img
+              src="https://images.unsplash.com/photo-1548907040-4baa42d10919?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Milk Chocolate"
+            />
+            <h3>Milk Chocolate</h3>
+            <p>₹40</p>
+            <input
+              type="number"
+              min="0"
+              max="8"
+              value="0"
+              onkeydown="return false"
+              onchange="updateSummary()"
+            />
+          </div>
+          <div class="product" data-name="White Chocolate" data-price="60">
+            <img
+              src="https://images.unsplash.com/photo-1620567783985-5a28560bce6b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="White Chocolate"
+            />
+            <h3>White Chocolate</h3>
+            <p>₹60</p>
+            <input
+              type="number"
+              min="0"
+              max="8"
+              value="0"
+              onkeydown="return false"
+              onchange="updateSummary()"
+            />
+          </div>
+          <div class="product" data-name="Fruit Chocolate" data-price="70">
+            <img
+              src="https://images.unsplash.com/photo-1526823127573-0fda76b6c24f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Fruit Chocolate"
+            />
+            <h3>Fruit Chocolate</h3>
+            <p>₹70</p>
+            <input
+              type="number"
+              min="0"
+              max="8"
+              value="0"
+              onkeydown="return false"
+              onchange="updateSummary()"
+            />
+          </div>
+        </div>
+        <div class="summary">
+          <h2>Your Custom Pack</h2>
+          <ul id="summary-items">
+          </ul>
+          <p id="summary-total">Total: ₹0</p>
+          <button id="summary-button" onclick="placeOrder()">Place Order</button>
+
+          <script src="script.js"></script>
+</body>
+</html>
